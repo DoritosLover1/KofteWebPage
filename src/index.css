@@ -1,0 +1,14 @@
+@layer theme, base, components, utilities;
+
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+
+
+.mainframe {
+  cursor: url("public/assets/cursor-icon"), auto !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

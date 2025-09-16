@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+/* Ortak component stilleri */
+@layer components {
+  .container {
+    @apply m-0 p-0 min-h-screen;
+  }
+
+  .header {
+    @apply w-screen relative flex items-center pt-2;
+  }
+
+  .top-left-container {
+    @apply absolute flex items-center justify-center text-black font-bold pl-1 md:pl-2 lg:pl-2;
+  }
+
+  .logo {
+    @apply w-24 h-28 pt-2 md:w-32 md:h-40 md:pt-4 lg:w-44 lg:h-48 lg:pt-6;
+  }
+
+  .nav-container {
+    @apply absolute right-6 flex gap-2 md:gap-4 lg:gap-5;
+  }
+  
+  .spacer {
+    @apply w-full h-16 md:h-20 lg:h-24;
+  }
+
+  .curved-text-svg {
+  @apply text-3xl md:text-2xl lg:text-lg;
+  font-weight: bold;
+  fill: url(#main-gradient);
+  filter: url(#main-shadow);
+  letter-spacing: 0.05em;
+  }
+  
+}
